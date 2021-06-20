@@ -1,0 +1,522 @@
+*,*:after, *:before {
+
+    margin: 0;
+    padding: 0;
+}
+
+/*#contenedor_carga {
+    background-color: #050505;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    z-index: 10000;
+}
+
+#carga {
+    border: 15px solid #ccc;
+    border-top-color: #41f321;
+    border-top-style: groove;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    -webkit-animation: girar 1.5s linear infinite;
+       -o-animation: girar 1.5s linear infinite;
+       animation: girar 1.5s linear infinite;
+}
+
+@keyframes girar {
+    from { transform: rotate(0deg);}
+    to { transform: rotate(360deg);}
+}*/
+
+body {  /*El backgroun-image es la imagen del fondo de la web sacada de heropatterns u otro lado*/
+    background: black; /*Color del fondo de la web*/
+    color: white; /*Color del texto de la web*/
+    background-color: #080808;
+    
+    font-size: 16px; /*Tamaño de fuente*/
+    font-family: 'Oswald', sans-serif;
+
+}
+
+
+
+a { /*Color de textos enlazados, osea los que tienen links*/
+    color: white; 
+    text-decoration: none; /*Subrayado del link*/
+}
+
+ul { /*Usado para sacar estilos por defecto de las listas*/
+    list-style: none;
+}
+
+.container { /*Centrar texto*/
+    width: 90%;
+    margin: auto;
+}
+
+/*Navegacion*/
+
+
+.nav-main { /*Modificacion de todo lo nav*/
+    font-size: 17px;
+    background: #050505;
+    display: flex;
+    justify-content: space-between; /*Es para determinar el espacio que utilizara*/
+    align-items: center;
+    height: 60px;
+    padding: 20px ;
+    position: fixed;
+    width: 100%;
+    margin-top: -110px;
+
+
+}
+
+
+
+
+
+.titlogo { /*Tamaño del logo*/
+    font-size: 30px;
+    color: white;
+    font-weight: 500;
+}
+
+
+
+/*Nav Left*/
+
+.nav-main ul {
+    display: flex; /*Coloca los menus uno al lado del otro, podemos cambiarlo*/
+    padding: 30px;
+
+
+}
+
+.nav-main ul li {
+    padding: 10px; /*Espaciado entre menus superiores*/
+
+}
+
+.nav-main ul li a { /*Realiza una separacion de las lineas hechas con el codigo de abajo de las palabras*/
+    padding: 6px;
+    color: white;
+
+}
+
+.nav-main ul li a:hover { /*Sirve para colocar una linea debajo de cada palabra del menu cuando pasemos con el click por encima*/
+    border-bottom: 2px solid #41f321;
+    color: #41f321;
+
+}
+
+.nav-main ul.nav-menu  { /*Acerca el menu de navegacion al icono de la web*/
+    right: 1;
+    padding: 80px;
+    margin: 0;
+
+}
+
+.menu-btn {
+    cursor: pointer;
+    top: 30px;
+    right: 30px;
+    z-index: 2;
+    font-size: 1.5rem;
+    display: none;
+    position: fixed;
+}
+
+/* SHOW CASE (PARTE PRINCIPAL) */
+
+hr { /*Separa la linea que se encuentra bajo las categorias, de la imagen */
+    margin: 10px 0;
+}
+
+.showcase {
+    width: 100%;
+    height: 400px;
+    margin-top: 110px;
+    background: url('./images/armadopc.jpg') no-repeat center center/cover; /*Imagen principal*/
+    padding: 2px;
+    display: flex; /*Para centrar texto*/
+    flex-direction: column; /*Para colocar texto centrado bajo la imagen*/
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+}
+
+.showcase h2 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.showcase h2 {
+    font-size: 45px;
+}
+
+.txtUno h2 {
+    font-size: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.txtUno p {
+    font-size: 23px;
+    padding-bottom: 5px;
+    font-weight: 300;
+}
+
+
+#anun {
+    font-weight: 600;
+    padding-top: 20px;
+    
+}
+
+.slider {
+    width: 100%;
+    height: 100%px;
+    overflow: hidden;
+}
+
+.slider ul {
+    display: flex;
+    padding: 10;
+    width: 100%;
+}
+
+.slider li {
+    width: 50%;
+    padding: 40px;
+    list-style: none;
+}
+
+.slider img {
+    width: 100%;
+    padding: 15px;
+    border: #41f321 2px solid;
+    color: #41f321;
+    background-color: #070707;
+    border-radius: 4px;
+    box-shadow: inset #41f321;
+    transition: ease-out .3s;
+    outline: none;
+}
+
+.slider img:hover {
+    color: #000;
+    background-color: #41f321;
+    cursor: pointer;
+}
+
+.txtDos h2 {
+    font-size: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.txtDos p {
+    font-size: 23px;
+    padding-bottom: 50px;
+    font-weight: 300;
+}
+
+.btncontact {
+    width: 700px;
+    padding: 15px;
+    height: 100px;
+    border: #41f321 2px solid;
+    color: #41f321;
+    background-color: #070707;
+    border-radius: 4px;
+    box-shadow: inset #41f321;
+    transition: ease-out .3s;
+    font-size: 30px;
+    outline: none;
+}
+
+.btncontact:hover {
+    color: #000;
+    background-color: #41f321;
+    cursor: pointer;
+    width: 700px;
+    
+
+}
+
+/*Social*/
+
+.social {
+    margin: 50px;
+}
+
+#facebook {
+    color: white;
+}
+
+#facebook:hover {
+    color: #3b5998;
+}
+
+.social p {  /*Modifica la palabra "Sigueme en mis redes*/
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    /*margin-top: -510px;*/
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links a {
+    margin: 0 30px;
+}
+
+.links a i {
+    font-size: 3rem;
+    padding: 6px;
+}
+
+
+/*Boton subir*/
+
+.go-top-container {
+    position: fixed;
+    transition: .2s;
+    bottom: 2px;
+    right: 2px;
+    width: 2px;
+    height: 2px;
+    z-index: 20;
+}
+
+.go-top-button {
+    width: -500%;
+    height: -10px;
+    background-color: #41f321;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .2s;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.go-top-button i {
+    position: absolute;
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    color: black;
+    transition: .3s;
+}
+
+.show {
+    width: 70px;
+    height: 70px;
+    z-index: 10;
+    transition: .5s;
+
+}
+
+.show .go-top-button{
+    animation: popup .1s ease-in-out;
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    z-index: 11;
+}
+
+.show i {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+
+
+@keyframes popup {
+    0%{
+        width: 0rem;
+        height: 0rem;
+    }
+    50%{
+        width: 70px;
+        height: 70px;
+    }
+    100%{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+
+/*Footer Links*/
+
+.footer-links {
+    background: #050505;
+    color: white;
+    font-size: 12px;
+    padding: 35px 0;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.footer-container ul {
+    margin: 0 auto;
+}
+
+.footer-container ul li {
+    line-height: 2.8;
+}
+
+.footer-container ul li:hover {
+    border-bottom: white 2px solid;
+    padding-right: -100px;
+}
+
+footer {
+    background: #050505;
+    color: white;
+    font-size: 15px;
+    padding: 20px 0;
+    text-align: center;
+    padding-bottom: 5px;
+    clear: both
+
+}
+
+#franvg {
+    color: white;
+    padding-bottom: 10px;
+}
+
+
+@media (max-width: 900px) {
+
+    .menu-btn {
+        display: block;
+
+
+    }
+    
+    .slider {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    
+    .slider ul {
+        display: list-item;
+        padding: 10;
+        width: 100%;
+    }
+    
+    .slider li {
+        width: 50%;
+        padding: 10px;
+        list-style: none;
+    }
+    
+    .slider img {
+        width: 100%;
+    }
+
+    .nav-main ul {
+        position: absolute;
+        width: 90%;
+        height: 100vh;
+        background: #050505;
+        top: 80px;
+        right: 0;
+        text-align: center;
+        display: block;
+        transform: translateX(1000px);
+
+
+     
+    }
+
+    .nav-main ul.nav-menu.show {
+        right: 0;
+        transform: translateX(30px);
+
+    }
+
+    .nav-main ul.nav-menu li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+        padding: 5px;
+        font-size: 19px;
+    }
+
+    /*.btn-contact {
+        width: 200px;
+        font-size: 30px;
+    }*/
+
+    .footer-links .footer-container {
+        grid-template-columns:  repeat(2, 1fr);
+    }
+    
+
+
+    /*.nav-main ul.nav-menu-right {
+        margin-right: 40px;
+    }*/
+}
+
+@media (max-width: 600px) {
+    
+    .showcase {
+        width: 100%;
+    }
+
+    .nav-main ul.nav-menu li{
+        display: block;
+        margin: 20px 0;
+        line-height: 30px;
+        padding: 5px;
+        font-size: 15px;
+    }
+
+
+    .beneficios ul {
+        font-size: 25px;
+    }
+
+    .btncontact {
+        text-align: center;
+        font-size: 24px;
+        font-size: 15px;
+    }
+
+    .footer-links .footer-container {
+        grid-template-columns:  1fr;
+    }
+
+
+}
