@@ -4,6 +4,17 @@
     padding: 0;
 }
 
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 30px;
+    background: #41f321;
+    box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px -2px
+        rgba(0, 0, 0, 0.25);
+}
+
 /*#contenedor_carga {
     background-color: #050505;
     height: 100%;
