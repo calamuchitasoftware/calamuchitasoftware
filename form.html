@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+    <title>Calamuchita Software - Contacto</title> <!--Sera visible en la pestaña del navegador-->
+    <link rel="shortcut icon" href="images/logo.png">
+    <!--Font Awesome (Herramientas para diseño de la web)-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!--Fuente-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="style-form.css">
+    <!--Whatsapp-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <!--div class="modal-wrap">
+        <div class="mensaje-error">
+            <h3>Coloca datos válidos</h3>
+            <p>Escriba un nombre</p>
+            <p>Escriba un correo electronico</p>
+            <p>Escriba un mensaje</p>
+            <span id="btnClose">Cerrar</span>
+        </div>
+    </div-->
+    
+    <div class="content">
+
+        <h1 class="logo">Calamuchita Software</h1>
+        <p class="agregado">CONTACTANOS</p>
+
+        <div class="contact-wrapper">
+            <div class="contact-form">
+                <h3>Realiza tu consulta</h3>
+                <form action="form.php" method="POST">
+                    <p>
+                        <label>Nombre y Apellido *</label>
+                        <input type="text" id="names" name="nombre" required>
+                    </p>
+                    <p>
+                        <label>Correo Electronico *</label>
+                        <input type="text" id="email" name="correo" required>
+                    </p>
+                    <p>
+                        <label>Teléfono</label>
+                        <input type="text" id="phone" name="telefono">
+                    </p>
+                    <p>
+                        <label>Mensaje *</label>
+                        <textarea id="mensaje" name="mensaje" required></textarea>
+                    </p>
+                    <p>
+                        <input type="submit" value="Enviar Mensaje" id="btnSend">
+                    </p>
+                </form>
+            </div>
+            <div class="contact-info">
+                <div class="infovaria">
+                    <p><span id="laptop" class="fas fa-laptop-code"></span></p>
+                    <h2>Calamuchita Software</h2>
+                </div>
+                <div>
+                    <p><span class="far fa-envelope"></span> calamuchitasoftware@gmail.com</p>
+                    <p><span class="fas fa-globe"></span> calamuchitasoftware.ga</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Menu js-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script src="form.js"></script>
+</body>
+</html>
