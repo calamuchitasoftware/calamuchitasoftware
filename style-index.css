@@ -314,6 +314,30 @@ hr { /*Separa la linea que se encuentra bajo las categorias, de la imagen */
     color: #080808;
 }
 
+.bannerDos {
+    width: 100%;
+    height: 350px;
+    background: url('./images/sistadmventas.jpg') no-repeat center center/cover;
+    margin-bottom: 40px;
+    padding-top: 10px;
+}
+
+.bannerDos .content {
+    width: 40%;
+    padding: 90px 0 0 30px;
+    color: white;
+    padding-top: 15px;
+}
+
+.bannerDos p,
+.bannerDos h2 {
+    margin: 10px 0 20px;
+}
+
+.bannerDos p {
+    font-size: 18px;
+}
+
 .bannerUno {
     width: 100%;
     height: 350px;
@@ -366,6 +390,14 @@ hr { /*Separa la linea que se encuentra bajo las categorias, de la imagen */
 
 #facebook:hover {
     color: #3b5998;
+}
+
+#instagram {
+    color: white;
+}
+
+#instagram:hover {
+    color: #833AB4;
 }
 
 .social p {  /*Modifica la palabra "Sigueme en mis redes*/
