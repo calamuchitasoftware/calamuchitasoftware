@@ -19,6 +19,7 @@ ScrollReveal().reveal('.showcase',);
 ScrollReveal().reveal('.nav-main', { delay: 600});
 //ScrollReveal().reveal('.showcase', { delay: 500 });
 ScrollReveal().reveal('.cards', { delay: 300 });
+ScrollReveal().reveal('.bannerDos', { delay: 300 });
 ScrollReveal().reveal('.bannerUno', { delay: 300 });
 ScrollReveal().reveal('.bannerDos', { delay: 300 });
 
