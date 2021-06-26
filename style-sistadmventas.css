@@ -433,6 +433,14 @@ hr { /*Separa la linea que se encuentra bajo las categorias, de la imagen */
     color: #3b5998;
 }
 
+#instagram {
+    color: white;
+}
+
+#instagram:hover {
+    color: #833AB4;
+}
+
 .social p {  /*Modifica la palabra "Sigueme en mis redes*/
     text-align: center;
     font-size: 30px;
